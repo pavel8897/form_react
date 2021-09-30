@@ -1,0 +1,17 @@
+[    
+    {
+        "title" : "Сократ",
+        "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur velit libero iusto nulla ipsa nesciunt quod, placeat aut corporis quam suscipit, delectus. Deserunt nulla dignissimos modi accusamus inventore animi aspernatur.",
+        "href" : "yandex.ru"
+    },
+    {
+        "title" : "Рамазаногуллары",
+        "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum omnis dicta perferendis odit modi magnam dolorem a harum ipsam! In enim aspernatur qui laudantium accusantium dolore id culpa veritatis.",
+        "href" : "google.ru"
+    },
+    {
+        "title" : "Клондайская золотая лихорадка",
+        "body" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore rem, eius nam quae eum adipisci magni molestias blanditiis alias esse, iusto nulla a. Explicabo ab quasi cumque a at, quibusdam.",
+        "href" : "yahoo.com"
+    }
+]

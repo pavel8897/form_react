@@ -1,0 +1,66 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.under{
+    text-decoration: line-through;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr td{
+    border: 2px solid black;
+    padding: 7px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.note{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1{
+    margin: 10px 0;
+}
+
+.select{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.questions label:hover{
+    cursor: pointer;
+}
+
+.questions label.red{
+    color: red;
+}
+
+.questions label.green{
+    color: green;
+}
+
+.span{
+    margin-right: 7px;
+}
+
+input {outline:none;}

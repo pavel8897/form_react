@@ -1,0 +1,9 @@
+.btn{
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: orange;    
+}

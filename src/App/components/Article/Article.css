@@ -1,0 +1,8 @@
+.article {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: antiquewhite;
+}

@@ -1,76 +1,44 @@
-import React from 'react'
-import Table from './Table'
-import Form from './Form'
-import './App.css'
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import {About} from './components/About/About'
+import {Users} from './components/Users/Users'
+import {Articles} from './components/Articles/Articles'
 
-class App extends React.Component {
-	constructor() {
-		super();
+export function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Articles</Link>
+            </li>
+            <li>
+              <Link to="/form">Form</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
 
-		this.state = {
-			users: [
-				{name: 'помидор', price: '130', count: 20},
-				{name: 'огурец', price: '70', count: 10},
-				{name: 'картошка', price: '30', count: 40},
-			], name: '', price: '', count: ''
-		};
-	}
-
-	deleteItem(item){
-		this.state.users.splice(item, 1)
-		this.setState({users: this.state.users})
-	}
-	
-	onChange1(e){
-		this.setState({name: e.target.value})
-	}
-
-	onChange2(e){
-		this.setState({price: e.target.value})
-	}
-
-	onChange3(e){
-		this.setState({count: e.target.value})
-	}
-
-	addItem(){
-		let item = {name: this.state.name, price: this.state.price, count: this.state.count}
-		this.state.users.push(item)
-		this.setState({users: this.state.users})
-	}
-
-	render() {
-		let table = this.state.users.map((item, index) => {
-			return <Table
-				name={item.name}
-				price={item.price}
-				count={item.count}
-				index={index}
-				item={item}
-				deleteItem={this.deleteItem.bind(this)}
-			/>
-		})
-
-		return (
-			<div>
-				<table>
-					<tbody>
-						{table}
-					</tbody>
-				</table>
-				<br/>				
-				<Form
-					onChange1={this.onChange1.bind(this)}
-					onChange2={this.onChange2.bind(this)}
-					onChange3={this.onChange3.bind(this)}
-					addItem={this.addItem.bind(this)}
-					name={this.state.name}
-					price={this.state.price}
-					count={this.state.count}
-				/>
-			</div>
-		)
-	}
+        <Switch>
+          <Route exact path="/" component={Articles} />
+            {/* <Home />
+          </Route> */}
+          <Route path="/form" component={About} />
+            {/* <About />
+          </Route> */}
+          <Route path="/users" component={Users} />
+            {/* <Users />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
+  );
 }
-
-export default App;
